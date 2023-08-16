@@ -1,0 +1,42 @@
+/* element selector */
+h1{
+    color: red;
+}
+h2{
+    font-size: 8px;
+}
+h3{
+    background-color: peachpuff;
+}
+
+/* id selector */
+#para1{
+    color: rgb(192, 128, 48);
+    font-size: 50px;
+    text-decoration: line-through;
+}
+
+/* class selector */
+.para-class{
+    color: black;
+    font-size: 50px;
+    text-decoration: underline;
+    background-color: green;
+}
+
+/* attribute selector */
+a[href='http://google.com']{
+    color: red;
+    font-size: 50px;
+    text-decoration: line-through;
+}
+input[type='password']{
+    color: green;
+}
+
+/* universal selector */
+*{
+    border: 5px solid black;
+    /* border: 5px dashed black;
+    border: 5px dotted black; */
+}

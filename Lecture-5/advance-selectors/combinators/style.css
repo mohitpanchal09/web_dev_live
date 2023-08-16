@@ -1,0 +1,56 @@
+/* descendent combinator */
+
+/* ------------------------------- */
+
+
+/* #header1 nav h1{
+font-size: 100px;
+color: antiquewhite;
+text-decoration: line-through;
+} */
+
+/* or  */
+
+/* header nav h1{
+    font-size: 100px;
+    color: antiquewhite;
+    text-decoration: line-through;
+    } */
+    
+/* or */
+
+header h1{
+    font-size: 100px;
+    color: antiquewhite;
+    text-decoration: overline;
+    }
+
+    /* ------------------- */
+
+
+
+/* child combinators */
+
+main>section>ul>.vohra{
+    color: pink;
+    font-size: 40px;
+}
+/* or */
+ul>.vohra{
+    color: pink;
+    font-size: 40px;
+}
+
+
+/* adjacenet sibling-> 1 */
+
+main article h1 + p{
+    font-size: 35px;
+    color: greenyellow;
+}
+
+/* general sibling */
+main article h1 ~p{
+    font-size: 35px;
+    color: green;
+}
