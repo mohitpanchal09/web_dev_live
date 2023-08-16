@@ -1,0 +1,14 @@
+p::first-letter{
+    font-size: 40px;
+}
+p::first-line{
+    background-color: peachpuff;
+}
+
+p::before{
+
+    content: '\1f62b'  ; 
+}
+p::after{
+content: 'hi i am samarth';
+}

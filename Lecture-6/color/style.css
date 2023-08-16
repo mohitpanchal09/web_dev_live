@@ -1,0 +1,44 @@
+
+/* rgb */
+h1{
+    color: rgb(123, 34, 20);
+}
+
+
+
+/* rgba */
+
+
+/* h2{
+    color: rgba(254, 12, 10, 0);
+} */
+/* on 0=> it becomes transparent ie white */
+
+/* h2{
+    color: rgba(254, 12, 10, 1);
+} */
+/* on 1=> it is not transparent */
+
+h2{
+    color: rgba(254, 12, 10, 0.5);
+}
+/* on 0.5=> little bit transparent*/
+
+
+/*         a can only be 0/1       */
+
+
+
+
+/* hexadecimal */
+h3{
+    color: #0f6b95;  /*rr gg bb */
+}
+
+p{
+    color: red;
+}
+
+p{
+    color: #ff000011;
+}

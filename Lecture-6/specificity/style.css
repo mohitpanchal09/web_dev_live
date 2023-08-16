@@ -1,0 +1,14 @@
+.sam{
+    background-color: gray;
+}
+#sam{
+    background-color: aliceblue;
+}
+
+h1{
+    background-color: blue;
+}
+
+/* id > class > element selector */
+
+/* inline > internal >external */
