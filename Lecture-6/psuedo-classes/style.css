@@ -21,12 +21,29 @@ input:hover{
     background-color: ghostwhite;
 }
 
+/* focus */
+
 input:focus{
     background-color: gray;
     font-size: 80px;
 }
+
+/* active */
 .hello:active{
     background-color: yellow;
+}
+button{
+    width: 10em;
+  height: 5ex;
+  background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+button:active{
+    box-shadow: 2px 2px 5px #fc894d;
 }
 
 /* first child */

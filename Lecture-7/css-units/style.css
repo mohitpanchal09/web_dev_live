@@ -1,0 +1,41 @@
+p{
+    font-size: 40px;
+}
+/* relative(parent) */
+/* div ka parent */
+
+/* 1. % */
+section{
+
+width: 500px;
+height: 500px;
+background-color: antiquewhite;
+}
+
+div{
+    height: 50%;
+    width: 50%;
+    background-color: blueviolet;
+}
+
+/* 2. em & rem */
+/* r=>root */
+
+ul>li{
+    /* font-size: 2em; */  /*snow ball effect*/
+    font-size: 2rem;
+}
+/* em=parent
+rem=root */
+
+/* 3. vw=view width and vh= view height */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.akhri{
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+}
+
