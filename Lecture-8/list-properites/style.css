@@ -1,0 +1,31 @@
+/* li{
+    list-style-type: square;
+    list-style-type: circle;
+    border: 1px solid red;
+to make the dots inside the border
+    list-style-position: inside;  
+    list-style-image: url('https://images.unsplash.com/photo-1685360798969-395cf93b7d2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9yYWVtb258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60');
+} */
+
+
+div{
+    /* border: 20px solid black; */
+    /* border-width: 10px;
+    border-style: dashed; */
+    height: 100px;
+    width: 100px;
+    border-top: 2px solid black;
+    border-right: 2px dashed red;
+
+}
+/* short hand property */
+/* border: 20px solid black; */
+
+.div2{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* or  top right bottom left - clockwise direction*/
+    border-radius: 10px 20px 50px 30px;
+    background-color: antiquewhite;
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    border: 1px solid red;
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 1 px solid black;
+}
+
+/* static */
+
+/* #section #middle{
+    position: static;
+    top: 100px;
+    left: 100px;
+} */
+
+/* relative */
+/* #relative #middle{
+    position: relative;
+    top: 50px;
+    bottom: 50px;
+   
+
+} */
+
+
+/* absolute */
+
+/* #absolute{
+    position: relative;
+} */
+/* #absolute #middle{
+position: absolute;
+top: 50px;
+} */
+
+
+
+/* fixed */
+
+/* #fixed{
+    position: relative;  parent ko postion do ya na do fixed k case me fark ni padega it always takes offset aacc to body
+} */
+/* #fixed #middle{
+    position: fixed;
+    top: 100px;
+} */
+
+
+/* sticky */
+
+#sticky{
+    height: 500px;
+}
+#sticky #middle{
+    position: sticky;
+    top: 100px;
+}
