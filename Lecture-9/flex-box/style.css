@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.parent{
+    height: 100vh;
+    border: 5px solid green;
+    display: flex; /*parent property*/
+    /* flex-direction: column; */
+    flex-direction: row; /* right now  main axis */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* justify-content: stretch; */
+    /* justify-content: flex-start;(default value) */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* flex-wrap: nowrap; default value */
+    /* flex-wrap: wrap; */
+    /* align-content: normal; default */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */ 
+    /* gap: 20px; to give gap bw elements */
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    padding: 24px;
+    border: 1px solid black;
+    /* display: inline-block; */ /*child property */
+
+}
+
+#item1{
+   
+    background-color: pink;
+    
+}
+#item2{
+    background-color: blue;
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+}
+#item3{
+    background-color: yellow;
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+    align-self: center;
+}
+#item4{
+    background-color: green;
+}
+#item5{
+    background-color: gray;
+    align-self: flex-end;
+}
