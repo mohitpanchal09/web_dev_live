@@ -37,10 +37,12 @@ div{
 /* #absolute{
     position: relative;
 } */
-/* #absolute #middle{
+#absolute #middle{
 position: absolute;
 top: 50px;
-} */
+/* bottom: 50px; */
+/* left: 50px; */
+}
 
 
 

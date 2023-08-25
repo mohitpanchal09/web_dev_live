@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border-radius: 24px;
+    transition-duration: 1s;
+    /* transition-property: border-radius; */
+}
+.box:hover{
+    border-radius: 50%;
+    background-color: darkblue;
+    /* transition-duration: 1s; dont do it here, because here reverse state will be abrupt */
+
+    
+}
