@@ -16,3 +16,60 @@ body{
 
     
 }
+.box2{
+    background-color: darkslateblue;
+    height: 100px;
+    width: 100px;
+    border-radius: 24px;
+    margin: auto;
+    /* transition: rotate 2s, height 2s, width 2s, rotate 2s; */
+    transition-duration: 0.5s;
+    
+    
+}
+.box2:hover{
+    /* height: 200px;
+    width: 200px;
+    rotate: 180deg; */
+    transform: scale(2) skew(-20deg);
+}
+.box3{
+    height: 100px;
+    width: 100px;
+    background-color: cadetblue;
+    transition-duration: 2s;
+    border-radius: 50%;
+}
+.box3:hover{
+    transform: scale(2);
+    background-color: white;
+}
+
+.box4{
+    height: 100px;width: 100px;
+    background-color: brown;
+    transition-duration: 2s;
+    /* transition-delay: 2s; */
+    
+}
+.box4:hover{
+    transform: scale(2);
+}
+
+.box5{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(3, 49, 3);
+    transition-duration: 2s;
+    border-radius: 24px;
+    
+    /* transform: translateX(-100vw); */
+}
+.box5:hover{
+   transform: translateX(100vw);
+   /* transform:
+      translate3d(0px, -16px, 0px)
+      rotateX(51deg)
+      rotateZ(43deg); */
+
+}
