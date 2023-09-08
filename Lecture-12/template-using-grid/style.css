@@ -16,14 +16,43 @@ body{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
     grid-template-rows: 1fr 5fr 5fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 'header header header'
+                        'nav-1 main nav-2'
+                        'nav-1 main nav-3'
+                        'footer footer footer'
+    
+    ;
     
 }
 .header{
-    grid-column: spam 4;
-    background-color: blanchedalmond;
+    background-color: blue;
+    /* grid-column: 1/4; */
+    grid-area: header;
 }
-.nav1{
-    grid-row: 2/4;
+.nav-1{
+    background-color: green;
+    /* grid-row: 2/4; */
+    grid-area: nav-1;
+}
+.nav-2{
+    background-color: pink;
+    /* grid-column: 3/4; */
+    grid-area: nav-2;
+}
+.nav-3{
+    background-color: sienna;
+    grid-area: nav-3;
+}
+.main{
+    background-color: aqua;
+    /* grid-column: 2/3;
+    grid-row: 2/4; */
+    grid-area:main;
+}
+.footer{
+    background-color: brown;
+    /* grid-column: 1/4; */
+    grid-area: footer;;
 }

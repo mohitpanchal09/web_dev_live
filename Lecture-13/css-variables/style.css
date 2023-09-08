@@ -1,0 +1,8 @@
+:root{
+    --ye-mera-font-size:60px;
+    --lal-color:red
+}
+h1{
+    font-size: var(--ye-mera-font-size);
+    color: var(--lal-color);
+}

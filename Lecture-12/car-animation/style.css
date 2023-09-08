@@ -7,6 +7,7 @@
     width: 100%;
     background-image: url('./assets/sky.jpg');
     position: relative;
+    overflow: hidden;
 }
 .highway{
     background-image: url('./assets/road.jpg');
@@ -93,5 +94,39 @@ from{
 @keyframes wheel {
     100%{
         transform: rotate(360deg);
+    }
+}
+.dragon{
+    position: absolute;
+    width: 300px;
+    margin: 150px auto;
+    left: 50%;
+}
+.dragon>.dragon-img{
+    width: 200px;
+    transform: rotate(-90deg);
+    animation-duration: 0.5s ;
+    animation-iteration-count: infinite;
+    animation-name: dragonflying;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.dragon-fire{
+    width: 200px;
+    mix-blend-mode:multiply;
+    transform: rotate(-90deg);
+    animation-duration: 0.5s ;
+    animation-iteration-count: infinite;
+    animation-name: dragonflying;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes dragonflying {
+    from {
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
     }
 }
