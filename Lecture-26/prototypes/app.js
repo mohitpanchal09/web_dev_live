@@ -12,9 +12,9 @@ let todo={
 // console.log(todo.toString())
 
 // console.log(todo)
-// console.log(todo.__proto__)
-// console.log(todo.__proto__===Object.prototype) //true
-// console.log(todo.__proto__.__proto__) //null
+console.log(todo.__proto__)
+console.log(todo.__proto__===Object.prototype) //true
+console.log(todo.__proto__.__proto__) //null
 
 // -----------------------------------
 
