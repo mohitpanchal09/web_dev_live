@@ -1,0 +1,5 @@
+let h1 = document.querySelector('h1')
+let h2= document.querySelector('h2')
+h1.remove()
+let div = document.querySelector('div')
+div.removeChild(h2)

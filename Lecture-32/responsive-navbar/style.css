@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    min-height: 50px;
+    align-items: center;
+}
+button{
+    display: none;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:768px) {
+    button{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+    .responsive-nav{
+        
+        flex-direction: column;
+    }
+}

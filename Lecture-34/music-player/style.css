@@ -1,0 +1,41 @@
+#progress-bar{
+    cursor:pointer;
+    width:100%;
+}
+i{
+    font-size: 1.6rem;
+}
+#container{
+    width: 360px;
+    height: 80vh;
+    text-align: center;
+    border: 2px solid black;
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+
+#play-section{
+   
+   padding: 20px;
+    
+}
+
+.song-item{
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 20px auto;
+    padding: 10px;
+    list-style: none;
+   
+
+}
+
+.song-item:hover{
+    background-color: rgb(231, 236, 236);
+    cursor: pointer;
+}
