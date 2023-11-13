@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    /* width: 80vw; */
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 0.5fr;
+    gap: 10px;
+}
+.grid-container2{
+    display: grid;
+    width: 450px;
+    grid-template-columns: 2fr 1fr 0.5fr;
+    gap: 10px;
+}
+input{
+    height: 40px;
+    border-radius: 8px;
+}
+button{
+    background-color: green;
+    border: none;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.delete{
+    background-color: red;
+    border: none;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+h3,p{
+    padding: 5px;
+}
+button:hover{
+    background-color: darkgreen;
+}
+
+.delete:hover{
+    background-color: rgb(194, 3, 3);
+    border: none;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
