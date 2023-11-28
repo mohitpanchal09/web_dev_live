@@ -1,0 +1,36 @@
+body{
+    
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media.discordapp.net/attachments/992390118457483376/1178714371061448724/image.png?ex=6577264d&is=6564b14d&hm=759c0770bae0e5dd54127be6b88306c294167fd32fd5488a08322e7782609ab5&=&format=webp&width=890&height=1060');
+    
+}
+.container{
+    
+    background-image: url('https://media.discordapp.net/attachments/992390118457483376/1178713877085700116/image.png?ex=657725d7&is=6564b0d7&hm=1c93b52ede872c63e79485ac88c54323f02829de9472c761aa38d252041631f3&=&format=webp&width=1340&height=468');
+    margin-top: 60px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 8px 10px 19px -4px rgba(0,0,0,0.58);
+-webkit-box-shadow: 8px 10px 19px -4px rgba(0,0,0,0.58);
+-moz-box-shadow: 8px 10px 19px -4px rgba(0,0,0,0.58);
+}
+input{
+    background-color: rgb(237, 233, 233);
+    border: none;
+    border-radius: 4px;
+}
+button{
+    border-radius: 4px;
+    border: none;
+    
+}
