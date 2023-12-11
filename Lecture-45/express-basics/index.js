@@ -10,7 +10,7 @@ const app = express(); // called the function and returned application object
 //     console.log('you made a request')
 // }) //accepts a cb function
 
-app.use((req,res)=>{
+app.use('/',(req,res)=>{
     // console.log(req)
     // console.log(res)
     res.send('hi sever me response bhejdia')
