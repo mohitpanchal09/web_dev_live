@@ -1,1 +1,2 @@
 no code today
+only db commands done today
