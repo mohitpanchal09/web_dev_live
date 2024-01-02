@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/products/<%=product._id%>?_method=PATCH" method ="POST">
+        <div>
+            <label for="naam">Name:</label>
+            <input type="text" id="naam" name="name" value="<%=product.name%>">
+            
+            <label for="pic">pic:</label>
+            <input type="text" id="naam" name="img" value="<%=product.img%>">
+
+            <label for="daam">price:</label>
+            <input type="number" id="pic" name="price" value="<%=product.price%>">
+
+            <label for="des">desc:</label>
+            <input type="text" id="des" name="desc" value="<%=product.desc%>">
+        </div>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
