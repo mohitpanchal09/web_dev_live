@@ -1,0 +1,27 @@
+
+  <%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+<%-include('../partials/flash')%>
+    <h1> all products</h1>
+    <div class="d-flex gap-5">
+  <%  for(let item of products){ %>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src=<%=item.img%> alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title"><%=item.title%></h5>
+        <p class="card-text"><%=item.desc%></p>
+        <strong class="card-text"><%=item.price%></strong>
+
+        
+      </div>
+      <form action="/products/<%=item._id%>?_method=DELETE" method="POST" class="d-flex gap-5">
+        <button type="delete" class="btn btn-danger">delete</button>
+        <a href="/product/<%=item._id%>" class="btn btn-primary">view product</a>
+        </form>
+       
+    </div>
+      
+
+  <%  } %>
+</div>
+  <%-include('../partials/footer')%>
