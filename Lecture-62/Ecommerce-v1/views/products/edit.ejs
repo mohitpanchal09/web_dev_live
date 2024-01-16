@@ -1,0 +1,39 @@
+
+  <%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+<%-include('../partials/flash')%>
+    <form action="/products/<%=product._id%>?_method=PATCH" method ="POST" novalidate class="needs-validation">
+        <div>
+            <label for="naam">Name:</label>
+            <input type="text" id="naam" name="name" value="<%=product.name%>">
+            
+            <label for="pic">pic:</label>
+            <input type="text" id="naam" name="img" value="<%=product.img%>">
+
+            <label for="daam">price:</label>
+            <input type="number" id="pic" name="price" value="<%=product.price%>">
+
+            <label for="des">desc:</label>
+            <input type="text" id="des" name="desc" value="<%=product.desc%>">
+        </div>
+        <button type="submit">submit</button>
+    </form>
+    <script>(() => {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+      
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()</script>
+      <%-include('../partials/footer')%>

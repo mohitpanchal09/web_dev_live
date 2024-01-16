@@ -26,7 +26,7 @@ router.get('/product/new',isLoggedIn,isSeller,(req,res)=>{
 
 //actually adding the product
 
-router.post('/products',isSeller,validateProduct,async (req,res)=>{
+router.post('/products',isLoggedIn,isSeller,validateProduct,async (req,res)=>{
     let {name,img,price,desc} =req.body
    await Product.create({name,img,price,desc,author:req.user._id}) //automatically save krdega db me
     res.redirect('/products')
@@ -50,7 +50,7 @@ router.get('/product/:id/edit',isLoggedIn,isProductAuthor,async(req,res)=>{
 })
 
 //actually edit the page
-router.patch('/products/:id',isProductAuthor,async(req,res)=>{
+router.patch('/products/:id',isLoggedIn,isProductAuthor,async(req,res)=>{
     let {id}= req.params
     let {name,img,price,desc}= req.body
   await  Product.findByIdAndUpdate(id,{name,img,price,desc})

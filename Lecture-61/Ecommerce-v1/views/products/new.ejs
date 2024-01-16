@@ -1,0 +1,61 @@
+
+  <%-include('../partials/header')%>
+  <%-include('../partials/navbar')%>
+  <%-include('../partials/flash')%>
+    <h1>new product form</h1>
+    <form action="/products" method="POST"  novalidate>
+        <div>
+            <div>
+            <label for="naam">Name:</label>
+            <input type="text" id="naam" name="name" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter a product name.
+              </div>
+            </div>
+            <div>
+            <label for="pic">pic:</label>
+            <input type="text" id="naam" name="img" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please enter a product img.
+              </div>
+            </div>
+            <div>
+            <label for="daam">price:</label>
+            <input type="number" id="pic" name="price" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Please choose a price.
+              </div>
+            </div>
+            <label for="des">desc:</label>
+            <input type="text" id="des" name="desc">
+        </div>
+        <button type="submit">submit</button>
+    </form>
+    <script>(() => {
+        'use strict'
+      
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+      
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+      
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()</script>
+<%-include('../partials/footer')%>
